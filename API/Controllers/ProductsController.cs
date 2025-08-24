@@ -10,9 +10,6 @@ namespace API.Controllers
     [ApiController]
     public class ProductsController(StoreContext context) : ControllerBase
     {
-
-
-
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
